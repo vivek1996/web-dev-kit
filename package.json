@@ -1,7 +1,11 @@
 {
   "name": "live-reload-for-web-projects",
   "version": "1.0.0",
-  "description": "Live Reload For Web Projects",
+  "description": "Live Reload For Web Projects With Scss and Less Compilers",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ShardulNalegave/live-reload-for-web-projects"
+  },
   "main": "index.js",
   "scripts": {
     "start": "gulp start"
