@@ -1,0 +1,26 @@
+
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Roboto');
+
+$defaultFont: sans-serif;
+
+body {
+    text-align: center;
+    font: {
+        family: $defaultFont;
+    }
+    h1 {
+        font: {
+            family: 'Comfortaa' , $defaultFont;
+        }
+    }
+    h3 {
+        font: {
+            family: 'Roboto' , $defaultFont;
+        }
+        code {
+            background-color: #FBC02D;
+            padding: 2px;
+            margin: 5px;
+        }
+    }
+}

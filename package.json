@@ -1,0 +1,18 @@
+{
+  "name": "live-reload-for-web-projects",
+  "version": "1.0.0",
+  "description": "Live Reload For Web Projects",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp start"
+  },
+  "author": "Shardul Nalegave",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.5.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-cli": "^2.0.1"
+  }
+}
