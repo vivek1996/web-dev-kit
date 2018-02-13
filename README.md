@@ -17,4 +17,4 @@ Simply Enter npm start In Your Terminal.
 
 ## Github Repository
 
-[web-dev-starter-kit](https://github.com/ShardulNalegave/web-dev-kit)
+[web-dev-kit](https://github.com/ShardulNalegave/web-dev-kit)

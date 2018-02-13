@@ -6,6 +6,7 @@
     "type": "git",
     "url": "https://github.com/ShardulNalegave/web-dev-kit"
   },
+  "main": "",
   "scripts": {
     "start": "gulp start"
   },
