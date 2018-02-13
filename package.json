@@ -1,10 +1,10 @@
 {
-  "name": "web-dev-starter-kit",
+  "name": "web-dev-kit",
   "version": "1.0.0",
   "description": "Live Reload For Web Projects With Scss and Less Compilers",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ShardulNalegave/web-dev-starter-kit"
+    "url": "https://github.com/ShardulNalegave/web-dev-kit"
   },
   "scripts": {
     "start": "gulp start"
