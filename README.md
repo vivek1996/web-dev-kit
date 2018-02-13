@@ -4,8 +4,9 @@ Live Reload For Your Web Projects With Sass And Less Compilers
 
 ## Installation
 
-Just Clone Or Download The Git Repository And Run npm install To Install All Dependencies.
+Just Run npm install web-dev-starter-kit In You Terminal Or Clone Or Download The Github Repository And Run npm install To Install All Dependencies.
 
+    npm install web-dev-starter-kit
     npm install
 
 ## Usage
@@ -13,3 +14,7 @@ Just Clone Or Download The Git Repository And Run npm install To Install All Dep
 Simply Enter npm start In Your Terminal.
 
     npm start 
+
+## Github Repository
+
+[web-dev-starter-kit](https://github.com/ShardulNalegave/web-dev-starter-kit)
