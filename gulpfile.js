@@ -1,12 +1,16 @@
-const gulp        = require('gulp');
-const browserSync = require('browser-sync').create();
-const sass        = require('gulp-sass');
-const less        = require('gulp-less');
+const gulp         = require('gulp');
+const browserSync  = require('browser-sync').create();
+const sass         = require('gulp-sass');
+const less         = require('gulp-less');
+const LESSreporter = require('gulp-less-reporter');
+const minifyCSS    = require('gulp-clean-css');
+const cssSCSS      = require('gulp-css-scss');
 
 // Compile Sass & Inject Into Browser
 gulp.task('sass', function() {
     return gulp.src(['src/scss/*.scss'])
         .pipe(sass())
+        .pipe(minifyCSS({compatibility: 'ie8'}))
         .pipe(gulp.dest("src/css"))
         .pipe(browserSync.stream());
 });
@@ -14,7 +18,8 @@ gulp.task('sass', function() {
 // Compile Less & Inject Into Browser
 gulp.task('less', function() {
     return gulp.src(['src/less/*.less'])
-        .pipe(less())
+        .pipe(less()).on('error', LESSreporter)
+        .pipe(minifyCSS({compatibility: 'ie8'}))
         .pipe(gulp.dest("src/css"))
         .pipe(browserSync.stream());
 });
