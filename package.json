@@ -1,7 +1,7 @@
 {
   "name": "web-dev-kit",
   "version": "1.0.0",
-  "description": "Live Reload For Web Projects With Scss and Less Compilers",
+  "description": "A Complete Set Of Tools Needed For Web Development",
   "repository": {
     "type": "git",
     "url": "https://github.com/ShardulNalegave/web-dev-kit"

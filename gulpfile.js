@@ -19,19 +19,32 @@ gulp.task('less', function() {
         .pipe(browserSync.stream());
 });
 
-// Watch Sass & Serve
+// Watch & Serve
 gulp.task('serve', ['sass' , 'less'], function() {
     browserSync.init({
         server: "./src"  
     });
 
-    gulp.watch(['src/scss/*.scss'], ['sass']);
+    // Watch SCSS Files
+    gulp.watch(['src/scss/*.scss'], ['sass']).on('change', browserSync.reload);;
     gulp.watch("src/*.html").on('change', browserSync.reload);
 
-    gulp.watch(['src/less/*.less'], ['less']);
+    // Watch LESS Files
+    gulp.watch(['src/less/*.less'], ['less']).on('change', browserSync.reload);;
     gulp.watch("src/*.html").on('change', browserSync.reload);
 
-    gulp.watch(['src/css/*.css']);
+    // Watch CSS Files
+    gulp.watch(['src/css/*.css']).on('change', browserSync.reload);;
+    gulp.watch("src/*.html").on('change', browserSync.reload);
+
+    // Watch PHP Files
+    gulp.watch(['src/*.php']).on('change', browserSync.reload);
+    gulp.watch("src/*.html").on('change', browserSync.reload);
+    gulp.watch(['src/php/*.php']).on('change', browserSync.reload);
+    gulp.watch("src/*.html").on('change', browserSync.reload);
+
+    // Watch JS Files
+    gulp.watch(['./src/js/*.js']).on('change', browserSync.reload);
     gulp.watch("src/*.html").on('change', browserSync.reload);
     
 });

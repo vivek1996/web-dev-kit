@@ -1,6 +1,6 @@
 # Web Development Kit
 
-Live Reload For Your Web Projects With Sass And Less Compilers
+A Complete Set Of Tools Needed For Web Development
 
 ## Installation
 
@@ -10,10 +10,6 @@ Just Clone Or Download The Github Repository And Run `npm install` To Install Al
 
 ## Usage
 
-Simply Enter `npm start` In Your Terminal.
+Simply Enter `npm start` In Your Terminal And Your Project Will Open In Your Browser.
 
     npm start 
-
-## Github Repository
-
-[web-dev-kit](https://github.com/ShardulNalegave/web-dev-kit)
