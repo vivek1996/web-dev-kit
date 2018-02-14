@@ -13,3 +13,7 @@ Just Clone Or Download The Github Repository And Run `npm install` To Install Al
 Simply Enter `npm start` In Your Terminal And Your Project Will Open In Your Browser.
 
     npm start 
+
+### License
+
+[This Project Is Licensed Under The MIT License](./LICENSE)

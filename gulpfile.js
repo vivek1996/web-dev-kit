@@ -1,15 +1,18 @@
 const gulp         = require('gulp');
 const browserSync  = require('browser-sync').create();
 const sass         = require('gulp-sass');
+const SCSSerror    = require('gulp-sass-error');
 const less         = require('gulp-less');
 const LESSreporter = require('gulp-less-reporter');
 const minifyCSS    = require('gulp-clean-css');
 const cssSCSS      = require('gulp-css-scss');
 
+const throwSCSSerror   = true;
+
 // Compile Sass & Inject Into Browser
 gulp.task('sass', function() {
     return gulp.src(['src/scss/*.scss'])
-        .pipe(sass())
+        .pipe(sass()).on('error', SCSSerror(throwSCSSerror))
         .pipe(minifyCSS({compatibility: 'ie8'}))
         .pipe(gulp.dest("src/css"))
         .pipe(browserSync.stream());
