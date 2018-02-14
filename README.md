@@ -15,6 +15,5 @@ Simply Enter `npm start` In Your Terminal And Your Project Will Open In Your Bro
     npm start 
 
 ### License
-----------------------------------------------------------------------------------
 
 [This Project Is Licensed Under The MIT License](./LICENSE)
