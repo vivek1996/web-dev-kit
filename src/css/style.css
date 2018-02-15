@@ -1,12 +1,1 @@
-@import url("https://fonts.googleapis.com/css?family=Comfortaa|Roboto");
-body {
-  text-align: center;
-  font-family: sans-serif; }
-  body h1 {
-    font-family: "Comfortaa", sans-serif; }
-  body h3 {
-    font-family: "Roboto", sans-serif; }
-    body h3 code {
-      background-color: #FBC02D;
-      padding: 2px;
-      margin: 5px; }
+@import url(https://fonts.googleapis.com/css?family=Comfortaa|Roboto);body{text-align:center;font-family:sans-serif}body h1{font-family:Comfortaa,sans-serif}body h3{font-family:Roboto,sans-serif}body h3 code{background-color:#fbc02d;padding:2px;margin:5px}
