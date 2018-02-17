@@ -11,7 +11,7 @@
     "start": "gulp start"
   },
   "author": "Shardul Nalegave <nalegaveshardul40@gmail.com>",
-  "license": "",
+  "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.23.6",
     "gulp": "^3.9.1",
