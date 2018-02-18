@@ -3,9 +3,6 @@ const browserSync  = require('browser-sync').create();
 const sass         = require('gulp-sass');
 const less         = require('gulp-less');
 const minifyCSS    = require('gulp-clean-css');
-const cssSCSS      = require('gulp-css-scss');
-
-const throwSCSSerror   = true;
 
 // Compile Sass & Inject Into Browser
 gulp.task('sass', function() {
