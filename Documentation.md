@@ -2,11 +2,11 @@
 
 ## Index
 
-[Installation](##Installation)
-[Usage](##Usage)
-[Deployment](##Deployment)
-[Tutorial](./Tutorial.md)
-[Features](##Features)
++ [Installation](##Installation)
++ [Usage](##Usage)
++ [Deployment](##Deployment)
++ [Tutorial](./Tutorial.md)
++ [Features](##Features)
 
 ## Installation
 
@@ -32,6 +32,6 @@ It You Want To Host Your Site Using GitPages Just Run `npm run gitpages` In Your
 
 ## Features
 
-+ Live Reload For HTML, CSS, LESS, SCSS, JS, PHP Files.
-+ Compilers For SCSS And LESS.
-+ Minified CSS.
+1. Live Reload For HTML, CSS, LESS, SCSS, JS, PHP Files.
+2. Compilers For SCSS And LESS.
+3. Minified CSS.

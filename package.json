@@ -8,7 +8,8 @@
   },
   "main": "",
   "scripts": {
-    "start": "gulp start"
+    "start": "gulp start",
+    "gitpages": "gulp gitpages"
   },
   "author": "Shardul Nalegave <nalegaveshardul40@gmail.com>",
   "license": "MIT",
