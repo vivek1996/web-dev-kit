@@ -35,3 +35,4 @@ It You Want To Host Your Site Using GitPages Just Run `npm run gitpages` In Your
 1. Live Reload For HTML, CSS, LESS, SCSS, JS, PHP Files.
 2. Compilers For SCSS And LESS.
 3. Minified CSS.
+4. GitPages Deployment
