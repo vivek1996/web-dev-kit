@@ -52,3 +52,27 @@ gulp.task('serve', ['sass' , 'less'], function() {
 
 // NPM Start
 gulp.task('start', ['serve']);
+
+// NPM RUN GITPAGES
+gulp.task('gitpages', () => {
+
+    gulp.src(['./src/*.html'])
+        .pipe(gulp.dest("./Gitpages-Ready-Site"));
+
+    gulp.src(['./src/js/*.js'])
+        .pipe(gulp.dest("./Gitpages-Ready-Site/js/"));
+
+    gulp.src(['./src/scss/*.scss'])
+        .pipe(sass())
+        .pipe(minifyCSS({compatibility: 'ie8'}))
+        .pipe(gulp.dest("./Gitpages-Ready-Site/css/"));
+
+    gulp.src(['./src/less/*.less'])
+        .pipe(less())
+        .pipe(minifyCSS({compatibility: 'ie8'}))
+        .pipe(gulp.dest("./Gitpages-Ready-Site/css/"));
+
+    gulp.src(['./src/css/*.css'])
+        .pipe(gulp.dest("./Gitpages-Ready-Site/css/"));
+
+});
