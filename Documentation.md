@@ -4,6 +4,7 @@
 
 [Installation](##Installation)
 [Usage](##Usage)
+[Deployment](##Deployment)
 [Tutorial](./Tutorial.md)
 [Features](##Features)
 
@@ -17,6 +18,14 @@ Just Clone Or Download The Repo And Run `npm install` To Install All Dependencie
 ## Usage
 
 First `cd` Into Your Project Folder Then Run `npm start` To Start The Live Server And Other Features.
+
+## Deployment
+
+It Is Very Easy To Deploy Your Site.
+
+It You Want To Host Your Site Using GitPages Just Run `npm run gitpages` In Your Terminal.
+
+    npm run gitpages
 
 ## [Tutorial](./Tutorial.md)
 
