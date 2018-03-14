@@ -56,3 +56,5 @@ It you want to host your site using GitPages just run `npm run gitpages` in your
 3. Minified CSS.
 4. GitPages Deployment
 5. Automatic `git add .` event for files in src/ (fires when any file in that directory changes)
+
+#### A Project By [ShardulNalegave](https://shardulnalegave.github.io)
