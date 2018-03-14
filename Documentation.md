@@ -2,11 +2,11 @@
 
 ## Index
 
-+ [Installation](##Installation)
-+ [Usage](##Usage)
-+ [What Is config.json](##UserSettings)
-+ [Deployment](##Deployment)
-+ [Features](##Features)
++ [Installation](#installation)
++ [Usage](#usage)
++ [What Is config.json](#user-settings)
++ [Deployment](#deployment)
++ [Features](#features)
 
 ## Installation
 
