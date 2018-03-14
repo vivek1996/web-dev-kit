@@ -1,5 +1,5 @@
 {
-    "javascript": "ts or coffee or none",
+    "js": "ts or coffee or none",
     "css": "scss or less or none",
     "cssMinify": true
 }

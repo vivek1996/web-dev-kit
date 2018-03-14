@@ -116,7 +116,13 @@ gulp.task('gitpages', ['less', 'scss', 'git', 'ts', 'coffee'], () => {
     gulp.src(['./src/js/*.js'])
         .pipe(gulp.dest("./Gitpages-Ready-Site/js/"));
 
-    gulp.src(['./src/css/*.css'])
+    if(settings.cssMinify === true) {
+        gulp.src(['./src/css/*.css'])
+        .pipe(minifyCSS())
         .pipe(gulp.dest("./Gitpages-Ready-Site/css/"));
+    } else {
+        gulp.src(['./src/css/*.css'])
+        .pipe(gulp.dest("./Gitpages-Ready-Site/css/"));
+    }
 
 });

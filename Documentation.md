@@ -4,25 +4,46 @@
 
 + [Installation](##Installation)
 + [Usage](##Usage)
++ [What Is config.json](##config.json)
 + [Deployment](##Deployment)
 + [Features](##Features)
 
 ## Installation
 
-Just Clone Or Download The Repo And Run `npm install` To Install All Dependencies.
+Just clone or download the repo and run `npm install` to install all dependencies.
 
+    git clone https://github.com/ShardulNalegave/web-dev-kit.git
+    cd web-dev-kit
     npm install
 
 
 ## Usage
 
-First `cd` Into Your Project Folder Then Run `npm start` To Start The Live Server And Other Features.
+First `cd` into your project folder then run `npm start` to start the **Live Server** with **Hot Reloading** and other features.
+
+
+## config.json
+
+`config.json` is the file were all the user settings are stored. The default content of this file is :-
+
+````{
+        "js": "ts or coffee or none",
+        "css": "scss or less or none",
+        "cssMinify": true
+    }
+````
+
+`js` field tells the kit what you are using for scripting. It can be none (vanilla JS), coffee (CoffeeScript), ts (TypeScript). 
+
+`css` field tells the kit which preprocessor you are using. It can be none (CSS3), less, scss.
+
+`cssMinify` tells the kit if you want to minify your CSS Files.
 
 ## Deployment
 
-It Is Very Easy To Deploy Your Site.
+It is very easy to deploy your site.
 
-It You Want To Host Your Site Using GitPages Just Run `npm run gitpages` In Your Terminal.
+It you want to host your site using GitPages just run `npm run gitpages` in your terminal and web-dev-kit will generate a folder named as **Gitpages-Ready-Site** which will have all the files you will need for deployment.
 
     npm run gitpages
 
