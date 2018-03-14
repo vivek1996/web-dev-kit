@@ -5,7 +5,6 @@
 + [Installation](##Installation)
 + [Usage](##Usage)
 + [Deployment](##Deployment)
-+ [Tutorial](./Tutorial.md)
 + [Features](##Features)
 
 ## Installation
@@ -26,8 +25,6 @@ It Is Very Easy To Deploy Your Site.
 It You Want To Host Your Site Using GitPages Just Run `npm run gitpages` In Your Terminal.
 
     npm run gitpages
-
-## [Tutorial](./Tutorial.md)
 
 
 ## Features

@@ -3,6 +3,8 @@ const browserSync  = require('browser-sync').create();
 const sass         = require('gulp-sass');
 const less         = require('gulp-less');
 const minifyCSS    = require('gulp-clean-css');
+const git          = require('gulp-git');
+const gitPush      = require('gulp-git-push');
 
 // Compile Sass & Inject Into Browser
 gulp.task('sass', function() {
@@ -22,26 +24,35 @@ gulp.task('less', function() {
         .pipe(browserSync.stream());
 });
 
+// Git Add
+gulp.task('git', function() {
+    return gulp.src(['src/*'])
+    .pipe(git.add());
+});
+
 // Watch & Serve
 gulp.task('serve', ['sass' , 'less'], function() {
+
     browserSync.init({
         server: "./src"  
+    }, (err) => {
+        console.log(err);
     });
 
     // Watch SCSS Files
-    gulp.watch(['src/scss/*.scss'], ['sass']).on('change', browserSync.reload);
+    gulp.watch(['src/scss/*.scss'], ['sass', 'git']).on('change', browserSync.reload);
 
     // Watch LESS Files
-    gulp.watch(['src/less/*.less'], ['less']).on('change', browserSync.reload);
+    gulp.watch(['src/less/*.less'], ['less', 'git']).on('change', browserSync.reload);
 
     // Watch CSS Files
-    gulp.watch(['src/css/*.css']).on('change', browserSync.reload);
+    gulp.watch(['src/css/*.css'], ['git']).on('change', browserSync.reload);
+
     // Watch JS Files
-    gulp.watch(['./src/js/*.js']).on('change', browserSync.reload);
+    gulp.watch(['./src/js/*.js'], ['git']).on('change', browserSync.reload);
 
     // Watch HTML Files
-    gulp.watch("src/html/*.html").on('change', browserSync.reload);
-    gulp.watch("src/*.html").on('change', browserSync.reload);
+    gulp.watch(['src/*.html', 'src/html/*.html', 'src/*.htm', 'src/html/*.htm', 'src/htm/*.html', 'src/htm/*.htm'], ['git']).on('change', browserSync.reload);
     
 });
 
