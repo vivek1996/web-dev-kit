@@ -4,7 +4,7 @@
 
 + [Installation](##Installation)
 + [Usage](##Usage)
-+ [What Is config.json](##config.json)
++ [What Is config.json](##UserSettings)
 + [Deployment](##Deployment)
 + [Features](##Features)
 
@@ -22,11 +22,12 @@ Just clone or download the repo and run `npm install` to install all dependencie
 First `cd` into your project folder then run `npm start` to start the **Live Server** with **Hot Reloading** and other features.
 
 
-## config.json
+## User Settings
 
 `config.json` is the file were all the user settings are stored. The default content of this file is :-
 
-````{
+````
+    {
         "js": "ts or coffee or none",
         "css": "scss or less or none",
         "cssMinify": true
