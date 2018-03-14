@@ -36,11 +36,6 @@ gulp.task('serve', ['sass' , 'less'], function() {
 
     // Watch CSS Files
     gulp.watch(['src/css/*.css']).on('change', browserSync.reload);
-
-    // Watch PHP Files
-    gulp.watch(['src/*.php']).on('change', browserSync.reload);
-    gulp.watch(['src/php/*.php']).on('change', browserSync.reload);
-
     // Watch JS Files
     gulp.watch(['./src/js/*.js']).on('change', browserSync.reload);
 
