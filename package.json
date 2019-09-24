@@ -15,14 +15,14 @@
   "license": "MIT",
   "dependencies": {
     "browser-sync": "^2.23.6",
-    "gulp": "^3.9.1",
-    "gulp-clean-css": "^3.9.2",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
     "gulp-cli": "^2.0.1",
-    "gulp-less": "^3.5.0",
-    "gulp-sass": "^3.1.0",
+    "gulp-less": "^4.0.1",
+    "gulp-sass": "^4.0.2",
     "gulp-coffeescript": "0.0.15",
     "gulp-git": "^2.5.2",
     "gulp-git-push": "^2.0.0",
-    "gulp-typescript": "^4.0.1"
+    "gulp-typescript": "^5.0.1"
   }
 }
